@@ -1,0 +1,354 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+
+  
+  }
+  .about_us_bg {
+    top: 100vh;
+    left :0;
+    bottom: 0;
+    position: absolute;
+    background-image: url(../MV_photos/two.jpeg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-color: rgba(1, 0, 0, 0.893);
+    width: 100%;
+    height: 25vh;
+    z-index: -2;
+  } 
+
+  .footer{
+   margin-left: 10%;
+   color: rgb(157, 85, 2);
+   width: 80%;
+   text-align: center;
+   align-items: center;
+   align-content: center;
+   padding: 1%;
+  }
+
+  .hidden_link{
+    text-decoration: none;
+    color: rgba(254, 195, 0, 0.774);
+    cursor: pointer;
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    /* align-content: center;
+    text-align: center; */
+    font-size: 400%;
+    top: 0;
+    left :0;
+    /* top: 0; */
+    background: rgba(2, 2, 2, 0.591);
+    color: #ffd90028;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .content2 {
+    position: absolute;
+    /* align-content: center;
+    text-align: center; */
+    font-size: 400%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(../MV_photos/about_us.JPG); 
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.744);
+    color: #ffd90028;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    
+  }
+ 
+  .home {
+    top: 50%;
+    align-content: center;
+    text-align: center;
+    height: 95%;
+  }
+
+  .home p{
+    align-content: center;
+    text-align: center;
+    font-size: 70px;
+    color: #ffd90028 ;
+    /* -webkit-text-stroke: 2px #ffd90028; */
+    /* color: transparent; */
+  }
+
+  .home p:hover {
+    color: #ffd900c7;
+
+  }
+  
+  .about_us {
+    margin-left: 10%;
+    margin-right: 5%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    /* height: 80vh; */
+    
+  }
+
+  .about_us p{
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: #ffd900ba ;
+ 
+  }
+
+  .about_us ul li{
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: #ffd900;
+    /* -webkit-text-stroke: 2px #ffd90028; */
+    /* color: transparent; */
+  }
+
+
+
+  
+  .header{
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    position: relative; 
+    padding: 0 0%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    top: 2; 
+    left: 0;
+    right: 0;
+    padding: 0px 0%;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+  }
+
+
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    /* margin-left: 10px; */
+
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: #ffd9008a ;
+    font-size: 17px;
+  }
+
+
+  
+  nav ul li a:hover{
+
+    color: #ffd900 ;
+ 
+  }
+
+  .box{
+    background-size: cover;
+    opacity :0.7;
+    background-color: #000000;
+    width: 200px;
+    height: 300px;
+    border: 3px solid #000000;
+    border-radius: 30px;
+  }
+
+
+  .box:hover {
+    opacity: 1;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .zoom-container {
+    position: relative;
+    width: 300px; /* adjust width */
+    height: 300px; /* adjust height */
+  }
+  
+  .zoom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .zoom-container:hover img {
+    transform: scale(1.03); /* adjust zoom level */
+  }
+  
+  .text-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #030303;
+    z-index: 1;
+  }
+
+  .text-overlay:hover {
+    -webkit-text-stroke: 2px #ffd90028;
+    opacity :1;
+  }
+  
+
+  div.gallery {
+    margin: 5px;
+    margin-top: 0;
+    border: 1px solid #ccc;
+    float: left;
+    width: 240px;
+    height: 240px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+    height: 420px;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    align-items: center ;
+    /* margin-left: 10%; */
+    width: 100%;
+    height: 10%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Container for image text */
+  /* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Six columns side by side */
+  /* .column {
+    float: left;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  /* .demo {
+    display: none;
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  } */
